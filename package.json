@@ -1,0 +1,19 @@
+{
+  "name": "fuzzaldrin-es",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build":"tsc src/index.ts && bun run build.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/bun": "^1.1.6"
+  },
+  "homepage": "https://github.com/LuisTovar0/fuzzaldrin-es",
+  "repository": {
+    "url": "https://github.com/LuisTovar0/fuzzaldrin-es",
+    "type": "git"
+  }
+}
