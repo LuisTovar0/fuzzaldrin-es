@@ -1,6 +1,6 @@
 {
   "name": "fuzzaldrin-es",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.3",
   "description": "An ESM-compatible TypeScript rewrite of the fuzzaldrin-plus library.",
   "type": "module",
   "scripts": {
@@ -14,20 +14,15 @@
   },
   "homepage": "https://github.com/LuisTovar0/fuzzaldrin-es",
   "repository": {
-    "url": "https://github.com/LuisTovar0/fuzzaldrin-es",
+    "url": "https://github.com/LuisTovar0/fuzzaldrin-es.git",
     "type": "git"
   },
   "bugs": {
     "url": "https://github.com/LuisTovar0/fuzzaldrin-es/issues"
   },
   "license": "MIT",
-  "module": "./esm",
-  "exports": {
-    ".": {
-      "types": "./types",
-      "default": "./esm"
-    }
-  },
+  "main": "./esm/index.js",
+  "types": "./types/index.d.ts",
   "keywords": [
     "fuzzy",
     "approximate",

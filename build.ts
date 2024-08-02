@@ -10,3 +10,5 @@ await Bun.build({
 
 fs.copyFileSync("./package.json", "dist/package.json");
 fs.copyFileSync("./README.md", "dist/README.md");
+fs.copyFileSync("./LICENSE", "dist/LICENSE");
+fs.cpSync("./src", "dist/src", { recursive: true });

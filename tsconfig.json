@@ -17,8 +17,7 @@
     "module": "ESNext",
     "moduleDetection": "force",
     "allowJs": true,
-    // Bundler mode
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node",
     // Best practices
     "strict": true,
     "skipLibCheck": true,
