@@ -1,9 +1,10 @@
 {
   "name": "fuzzaldrin-es",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
+  "description": "An ESM-compatible TypeScript rewrite of the fuzzaldrin-plus library.",
   "type": "module",
   "scripts": {
-    "build":"tsc src/index.ts && bun run build.ts"
+    "build": "tsc --project tsconfig.json && bun run build.ts"
   },
   "devDependencies": {
     "typescript": "^5.5.4"
@@ -15,5 +16,26 @@
   "repository": {
     "url": "https://github.com/LuisTovar0/fuzzaldrin-es",
     "type": "git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/LuisTovar0/fuzzaldrin-es/issues"
+  },
+  "license": "MIT",
+  "module": "./esm",
+  "exports": {
+    ".": {
+      "types": "./types",
+      "default": "./esm"
+    }
+  },
+  "keywords": [
+    "fuzzy",
+    "approximate",
+    "string",
+    "matching",
+    "filter",
+    "search",
+    "highlight",
+    "sublime"
+  ]
 }

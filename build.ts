@@ -8,15 +8,5 @@ await Bun.build({
   sourcemap: "linked",
 });
 
-import { name, version, homepage, repository, type } from "./package.json";
-const packageJson = {
-  name, version, homepage, repository, type,
-  module: "./esm",
-  exports: {
-    ".": {
-      types: "./types",
-      default: "./esm"
-    }
-  },
-};
-fs.writeFileSync("dist/package.json", JSON.stringify(packageJson, null, 2));
+fs.copyFileSync("./package.json", "dist/package.json");
+fs.copyFileSync("./README.md", "dist/README.md");
